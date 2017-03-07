@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">BNI UMKM</string>
+    <string name="action_settings">Setting</string>
+    <string name="drawer_open">Open</string>
+    <string name="drawer_close">Close</string>
+    <string name="bersemi">Bersemi</string>
+</resources>
