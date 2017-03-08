@@ -1,5 +1,6 @@
 package com.bni.umkm.bniumkm;
 
+import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.content.Context;
@@ -33,7 +34,7 @@ public class login extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         loginmember();
-    }
+          }
     public void loginmember() {
         // TODO Auto-generated method stub
 

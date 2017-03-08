@@ -1,56 +1,147 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical" android:layout_width="match_parent"
-    android:background="@color/colorPrimaryDark"
-    android:layout_height="match_parent">
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Sign In UMKM"
-        android:layout_gravity="center"
-        android:textStyle="bold"
-        android:textSize="25dp"
-        android:textColor="@color/White"
-        android:layout_marginTop="75dp"
-        android:fontFamily="monospace"
-        />
-    <EditText
-        android:layout_marginTop="30dp"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:inputType="textPersonName"
-        android:ems="50"
-
-        android:id="@+id/nama_pelanggan"
-        android:hint="User Name"
-        android:textColorHint="@color/White"
-        />
-
-    <EditText
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:inputType="textPassword"
-        android:ems="25"
-        android:id="@+id/pass_pelanggan"
-        android:hint="Password"
-        android:textColorHint="@color/White"
-        />
-<TextView
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:id="@+id/lupa_password"
-    android:text="Lupa Password"
-    android:layout_gravity="end"
-    android:textAlignment="textEnd" />
+    android:layout_height="match_parent"
+    android:background="@color/Hijau"
+    android:scrollbars="vertical">
+    <RelativeLayout
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/Hijau"
+        android:scrollbarAlwaysDrawVerticalTrack="true">
 
-    <Button
-        android:textStyle="bold"
-        android:textColor="@color/colorPrimaryDark"
-        android:background="@color/White"
-        android:id="@+id/masuk_pelanggan"
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:text="Masuk" />
+        <TextView
+            android:id="@+id/LoginTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:layout_marginTop="20dp"
+            android:gravity="center_horizontal"
+            android:text="Account Login"
+            android:textColor="@color/Putih"
+            android:textSize="26dp"
+            android:textStyle="bold" />
 
-</LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/LoginTitle"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="70dp"
+            android:background="@color/Tua"
+            android:elevation="4dp"
+            android:orientation="vertical"
+            android:padding="20dp"
+            android:id="@+id/PanelPutih">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingTop="30dp">
+
+                <android.support.design.widget.TextInputLayout
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/EtEmail1"
+
+                    >
+
+                    <EditText
+                        android:id="@+id/nama_pelanggan"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColorHint="@color/Orange"
+                        app:passwordToggleTint="@color/Orange"
+                        app:passwordToggleEnabled ="true"
+                        android:hint="Email"
+                        android:textSize="20dp"
+                        android:inputType="textEmailAddress" />
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/EtPassword1"
+                    app:passwordToggleTint="@color/Orange"
+                    app:passwordToggleEnabled ="true"
+
+
+
+                    >
+
+                    <EditText
+                        android:id="@+id/pass_pelanggan"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="16dp"
+                        android:textSize="20dp"
+android:textColorHint="@color/Orange"
+
+                        android:hint="Password"
+                        android:inputType="textPassword" />
+
+                </android.support.design.widget.TextInputLayout>
+
+
+
+
+                <Button
+                    android:layout_gravity="center"
+                    android:id="@+id/masuk_pelanggan"
+                    android:layout_width="100dp"
+                    android:layout_height="40dp"
+                    android:layout_margin="22dp"
+                    android:background="@color/Orange"
+                    android:text="MASUK"
+                    android:textAllCaps="false"
+                    android:textColor="#fff"
+                    android:textSize="18sp" />
+
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_gravity="center"
+                android:layout_width="321dp"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+
+
+                <TextView
+                    android:gravity="right"
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:textColor="@color/Orange"
+
+                    android:text="Lupa Password ?"
+                    android:layout_marginRight="35dp"
+
+                    android:id="@+id/lupa_password" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <ImageButton
+            android:id="@+id/user_profile_photo"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="26dp"
+            android:background="@drawable/user_profile_image_background"
+            android:elevation="10dp"
+            android:src="@drawable/iki"
+            android:layout_below="@+id/LoginTitle"
+            android:layout_centerHorizontal="true" />
+
+
+    </RelativeLayout>
+</ScrollView>
