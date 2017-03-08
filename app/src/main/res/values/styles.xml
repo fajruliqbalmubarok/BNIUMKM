@@ -1,9 +1,9 @@
 <resources>
     <style name="AppTheme" parent="Theme.AppCompat.NoActionBar">
         <!-- Customize your theme here. -->
-        <item name="colorPrimary">@color/colorPrimary</item>
-        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
-        <item name="colorAccent">@color/colorAccent</item>
+        <item name="colorPrimary">@color/Hijau</item>
+        <item name="colorPrimaryDark">@color/Orange</item>
+        <item name="colorAccent">@color/Orange</item>
     </style>
     <!-- Tambah Style  -->
     <style name="AppTheme.NoActionBar">
@@ -17,5 +17,20 @@
     <style name="AppTheme.PopupOverlay"
         parent="ThemeOverlay.AppCompat.Light"
         />
+    <style name="EditTextHint" parent="TextAppearance.AppCompat">
+        <item name="colorAccent">@color/Hijau</item>
+        <item name="android:textColorHint">@color/Hijau</item>
+        <item name="colorControlNormal">@color/Orange</item>
+        <item name="colorControlActivated">@color/Hijau</item>
+        <item name="colorControlHighlight">@color/Orange</item>
+    </style>
+
+    <style name="EditTextHintLogin" parent="TextAppearance.AppCompat">
+        <item name="colorAccent">@color/Hijau</item>
+        <item name="android:textColorHint">@color/Hijau</item>
+        <item name="colorControlNormal">@color/Hijau</item>
+        <item name="colorControlActivated">@color/Hijau</item>
+        <item name="colorControlHighlight">@color/Hijau</item>
+    </style>
 
 </resources>

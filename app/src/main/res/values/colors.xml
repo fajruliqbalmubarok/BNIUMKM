@@ -2,6 +2,9 @@
 <resources>
     <color name="colorPrimary">#3F51B5</color>
     <color name="colorPrimaryDark">#303F9F</color>
-    <color name="colorAccent">#FF4081</color>
-    <color name="White">#FFFFFF</color>
+    <color name="colorAccent">#a62b54</color>
+    <color name="Putih">#FFFFFF</color>
+    <color name="Orange" >#fda025</color>
+    <color name="Hijau" >#215e53</color>
+    <color name="Tua" >#2e544e</color>
 </resources>

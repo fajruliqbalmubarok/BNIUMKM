@@ -33,8 +33,8 @@ public class MainActivity extends AppCompatActivity {
         // tablayout
         tabLayout = (TabLayout) findViewById(R.id.tabLayout); //mengenalkan komponen tab layout yang berada di activity_main ke MainActivity.java
         tabLayout.addTab(tabLayout.newTab().setText("Berita")); //Nama menu tab yang pertama
-        tabLayout.addTab(tabLayout.newTab().setText("Calculator")); //Nama menu tab yang kedua
-        tabLayout.setTabGravity(TabLayout.GRAVITY_CENTER); //membuat rata tengah posisi tab layout
+        tabLayout.addTab(tabLayout.newTab().setText("Kalkulator")); //Nama menu tab yang kedua
+        tabLayout.setTabGravity(TabLayout.GRAVITY_FILL); //membuat rata tengah posisi tab layout
         //viewpager
         viewPager = (ViewPager) findViewById(R.id.viewPager); //mengenalkan komponen view pager yang berada di activity_main ke MainActivity.java
         tabadapter adapter = new tabadapter(getSupportFragmentManager(), tabLayout.getTabCount()); //menerapkan page adapter PageAdapter.java
