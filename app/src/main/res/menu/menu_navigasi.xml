@@ -2,19 +2,11 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
     <group android:checkableBehavior="single">
         <item
-            android:id="@+id/home"
-            android:title="Beranda"
-            android:icon="@drawable/ic_home"/>
-        <item
-            android:id="@+id/settings"
+            android:id="@+id/about"
             android:title="About"
             android:icon="@drawable/ic_setting"/>
         <item
-            android:id="@+id/trash"
-            android:title="Petunjuk"
-            android:icon="@drawable/ic_trash"/>
-        <item
-            android:id="@+id/logout"
+            android:id="@+id/login"
             android:title="Login"
             android:icon="@drawable/ic_exit"/>
     </group>

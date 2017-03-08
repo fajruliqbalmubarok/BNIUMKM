@@ -1,41 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.v4.widget.DrawerLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/drawer"
+
     android:layout_width="match_parent"
+
     android:layout_height="match_parent"
-    android:fitsSystemWindows="true"
-    tools:openDrawer="start">
 
-    <android.support.design.widget.CoordinatorLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:fitsSystemWindows="true"
-        tools:context="com.example.ciqwan.app_volley.MainActivity">
+    xmlns:app="http://schemas.android.com/apk/res-auto"
 
-        <android.support.design.widget.AppBarLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:theme="@style/AppTheme.AppBarOverlay">
+    android:orientation="vertical"
 
-            <android.support.v7.widget.Toolbar
-                android:id="@+id/toolbar"
-                android:layout_width="match_parent"
-                android:layout_height="?attr/actionBarSize"
-                android:background="?attr/colorPrimary"
-                app:popupTheme="@style/AppTheme.PopupOverlay"
-                />
-
-        </android.support.design.widget.AppBarLayout>
-
-        <!--TabLayout dan ViewPager-->
-        <LinearLayout
-
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:orientation="vertical">
+    tools:context=".MainActivity">
         <LinearLayout
 
             android:layout_width="wrap_content"
@@ -47,7 +23,6 @@
 
 
             <!--app:theme dark action bar digunakan untuk membuat text tablayout berwarna putih-->
-
             <android.support.design.widget.TabLayout
 
                 android:id="@+id/tabLayout"
@@ -59,7 +34,7 @@
 
                 android:minHeight="?attr/actionBarSize"
 
-                app:theme="@style/Base.ThemeOverlay.AppCompat.Dark.ActionBar"/>
+                app:theme="@style/AppTheme.NoActionBar"/>
 
 
 
@@ -79,14 +54,3 @@
 
         </LinearLayout>
         </LinearLayout>
-    </android.support.design.widget.CoordinatorLayout>
-
-    <android.support.design.widget.NavigationView
-        android:id="@+id/navigation_view"
-        android:layout_height="match_parent"
-        android:layout_width="wrap_content"
-        android:layout_gravity="start"
-        app:headerLayout="@layout/header"
-        app:menu="@menu/menu_navigasi"/>
-
-</android.support.v4.widget.DrawerLayout>

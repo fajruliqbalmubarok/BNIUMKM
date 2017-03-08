@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:background="@color/colorPrimaryDark"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sign In UMKM"
+        android:layout_gravity="center"
+        android:textStyle="bold"
+        android:textSize="25dp"
+        android:textColor="@color/White"
+        android:layout_marginTop="75dp"
+        android:fontFamily="monospace"
+        />
+    <EditText
+        android:layout_marginTop="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="50"
+
+        android:id="@+id/nama_pelanggan"
+        android:hint="User Name"
+        android:textColorHint="@color/White"
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:ems="25"
+        android:id="@+id/pass_pelanggan"
+        android:hint="Password"
+        android:textColorHint="@color/White"
+        />
+<TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/lupa_password"
+    android:text="Lupa Password"
+    android:layout_gravity="end"
+    android:textAlignment="textEnd" />
+
+    <Button
+        android:textStyle="bold"
+        android:textColor="@color/colorPrimaryDark"
+        android:background="@color/White"
+        android:id="@+id/masuk_pelanggan"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Masuk" />
+
+</LinearLayout>
