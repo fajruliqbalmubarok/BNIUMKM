@@ -24,7 +24,6 @@ import com.bni.umkm.bniumkm.DataSQLite.DataHelper;
 import com.bni.umkm.bniumkm.config.config;
 import com.bni.umkm.bniumkm.config.koneksi;
 import com.bni.umkm.bniumkm.user.berandauser;
-
 public class login extends AppCompatActivity {
     EditText nama_pelanggan,pass_pelanggan;
     Button masuk_pelanggan;
@@ -39,8 +38,6 @@ public class login extends AppCompatActivity {
         // TODO Auto-generated method stub
 
         setContentView(R.layout.login);
-
-
         nama_pelanggan = (EditText)findViewById(R.id.nama_pelanggan);
         pass_pelanggan = (EditText)findViewById(R.id.pass_pelanggan);
         masuk_pelanggan = (Button)findViewById(R.id.masuk_pelanggan);
@@ -102,7 +99,7 @@ public class login extends AppCompatActivity {
 //                            intent.putExtra(MainActivity.terima,Id);
 
                             SQLiteDatabase db = dbHelper.getWritableDatabase();
-                            db.execSQL("insert into member(nama_pelanggan, pass_pelanggan) values('" +
+                            db.execSQL("insert into pelanggan(nama_pelanggan, pass_pelanggan) values('" +
                                     String.valueOf(nama_pelanggan.getText()) + "','" +
                                     String.valueOf(pass_pelanggan.getText()) + "')");
                             Toast.makeText(getApplicationContext(), "data sukses", Toast.LENGTH_LONG).show();
